@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14200a90-60ef-4262-94df-26997255856b" name="Changes" comment="" />
+    <list default="true" id="14200a90-60ef-4262-94df-26997255856b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/10_TicTacToe/src/models/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10_TicTacToe/src/models/Move.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10_TicTacToe/src/models/board/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10_TicTacToe/src/models/board/SimpleBoard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10_TicTacToe/src/models/player/AiPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10_TicTacToe/src/models/player/Engine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10_TicTacToe/src/models/player/HumanPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10_TicTacToe/src/models/player/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_VendingMachine/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/09_VendingMachine/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_VendingMachine/src/database/Repo.java" beforeDir="false" afterPath="$PROJECT_DIR$/09_VendingMachine/src/database/Repo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_VendingMachine/src/factory/PaymentFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/09_VendingMachine/src/factory/PaymentFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_VendingMachine/src/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/09_VendingMachine/src/models/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_VendingMachine/src/models/Rack.java" beforeDir="false" afterPath="$PROJECT_DIR$/09_VendingMachine/src/models/Rack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_VendingMachine/src/service/Facade.java" beforeDir="false" afterPath="$PROJECT_DIR$/09_VendingMachine/src/service/Facade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_VendingMachine/src/strategy/CashPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/09_VendingMachine/src/strategy/CashPayment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_VendingMachine/src/strategy/CreditCardPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/09_VendingMachine/src/strategy/CreditCardPayment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_VendingMachine/src/strategy/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/09_VendingMachine/src/strategy/Payment.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,12 +78,16 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="31BLRdzUsYgTXw1C8YEmJcdxgSO" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main (4).executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "Gradle.02_ChessGame [:Main.main()].executor": "Run",
     "Gradle.05_BookMyShow [:Main.main()].executor": "Run",
@@ -78,7 +100,10 @@
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/vishn/OneDrive/Desktop/workspace/InterviewPrep/LLD/06_BookMyShowV2/src",
-    "onboarding.tips.debug.path": "C:/Users/vishn/OneDrive/Desktop/workspace/InterviewPrep/LLD/09_VendingMachine/src/Main.java",
+    "onboarding.tips.debug.path": "C:/Users/vishn/OneDrive/Desktop/workspace/InterviewPrep/LLD/10_TicTacToe/src/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
@@ -90,7 +115,7 @@
       <recent name="C:\Users\vishn\OneDrive\Desktop\workspace\InterviewPrep\LLD\06_BookMyShowV2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (3)">
+  <component name="RunManager" selected="Application.Main (4)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="05_BookMyShow.main" />
@@ -130,6 +155,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="09_VendingMachine" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="07_LoggingSystem.main" />
@@ -158,6 +190,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (4)" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />

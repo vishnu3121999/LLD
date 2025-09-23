@@ -5,7 +5,7 @@ import strategy.Payment;
 
 public class PaymentFactory {
 
-    static Payment get(String type){
+    public static Payment get(String type){
 
         switch(type){
             case "credit" : return new CreditCardPayment();

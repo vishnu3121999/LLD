@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5d2dff31-ec95-44ab-bed0-04e45e657e11" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_01_BankAccountSimulatorCorrect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_01_BankAccountSimulatorWrong.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="30VP1uO6B6tevi9di0SqphaekfI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.BankAccountSimulator.executor": "Run",
+    "Application.BankAccountSimulatorCorrect (1).executor": "Run",
+    "Application.BankAccountSimulatorCorrect (2).executor": "Run",
+    "Application.BankAccountSimulatorCorrect (3).executor": "Run",
+    "Application.BankAccountSimulatorCorrect (4).executor": "Run",
+    "Application.BankAccountSimulatorCorrect (5).executor": "Run",
+    "Application.BankAccountSimulatorCorrect.executor": "Run",
+    "Application.BankAccountSimulatorWrong (1).executor": "Run",
+    "Application.BankAccountSimulatorWrong (2).executor": "Run",
+    "Application.BankAccountSimulatorWrong (3).executor": "Run",
+    "Application.BankAccountSimulatorWrong (4).executor": "Run",
+    "Application.BankAccountSimulatorWrong.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/vishn/OneDrive/Desktop/workspace/LLD/00_MultiThreading/src",
+    "onboarding.tips.debug.path": "C:/Users/vishn/OneDrive/Desktop/workspace/LLD/00_MultiThreading/src/Main.java"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\vishn\OneDrive\Desktop\workspace\LLD\00_MultiThreading\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.BankAccountSimulatorWrong (4)">
+    <configuration name="BankAccountSimulatorWrong (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BankAccountSimulatorWrong" />
+      <module name="00_MultiThreading" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankAccountSimulatorWrong (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BankAccountSimulatorWrong" />
+      <module name="00_MultiThreading" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankAccountSimulatorWrong (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BankAccountSimulatorWrong" />
+      <module name="00_MultiThreading" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankAccountSimulatorWrong (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BankAccountSimulatorWrong" />
+      <module name="00_MultiThreading" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankAccountSimulatorWrong" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BankAccountSimulatorWrong" />
+      <module name="00_MultiThreading" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.BankAccountSimulatorWrong (4)" />
+        <item itemvalue="Application.BankAccountSimulatorWrong (3)" />
+        <item itemvalue="Application.BankAccountSimulatorWrong (2)" />
+        <item itemvalue="Application.BankAccountSimulatorWrong (1)" />
+        <item itemvalue="Application.BankAccountSimulatorWrong" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5d2dff31-ec95-44ab-bed0-04e45e657e11" name="Changes" comment="" />
+      <created>1753709557114</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1753709557114</updated>
+    </task>
+    <servers />
+  </component>
+</project>

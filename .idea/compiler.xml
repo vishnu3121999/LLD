@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.34/ec547ef414ab1d2c040118fb9c1c265ada63af14/lombok-1.18.34.jar" />
+        </processorPath>
+        <module name="08_HospitalManagementSystsem.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="02_ChessGame" target="17" />
+      <module name="02_ChessGame.main" target="17" />
+      <module name="02_ChessGame.test" target="17" />
+      <module name="05_BookMyShow" target="17" />
+      <module name="05_BookMyShow.main" target="17" />
+      <module name="05_BookMyShow.test" target="17" />
+      <module name="05_BookMyShowV1" target="17" />
+      <module name="05_BookMyShowV1.main" target="17" />
+      <module name="05_BookMyShowV1.test" target="17" />
+      <module name="06_BookMyShowV2" target="17" />
+      <module name="06_BookMyShowV2.main" target="17" />
+      <module name="06_BookMyShowV2.test" target="17" />
+      <module name="07_LoggingSystem" target="17" />
+      <module name="07_LoggingSystem.main" target="17" />
+      <module name="07_LoggingSystem.test" target="17" />
+      <module name="08_HospitalManagementSystsem" target="17" />
+      <module name="08_HospitalManagementSystsem.main" target="17" />
+      <module name="08_HospitalManagementSystsem.test" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

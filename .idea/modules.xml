@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/01_ParkingLot/01_ParkingLot.iml" filepath="$PROJECT_DIR$/01_ParkingLot/01_ParkingLot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02_ChessGame.iml" filepath="$PROJECT_DIR$/02_ChessGame.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/02_ChessGame.main.iml" filepath="$PROJECT_DIR$/.idea/modules/02_ChessGame.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/02_ChessGame.test.iml" filepath="$PROJECT_DIR$/.idea/modules/02_ChessGame.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03_ElevatorSystem/03_ElevatorSystem.iml" filepath="$PROJECT_DIR$/03_ElevatorSystem/03_ElevatorSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04_Splitwise/04_Splitwise.iml" filepath="$PROJECT_DIR$/04_Splitwise/04_Splitwise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/05_BookMyShow.iml" filepath="$PROJECT_DIR$/.idea/modules/05_BookMyShow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/05_BookMyShow.main.iml" filepath="$PROJECT_DIR$/.idea/modules/05_BookMyShow.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/05_BookMyShow.test.iml" filepath="$PROJECT_DIR$/.idea/modules/05_BookMyShow.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06_BookMyShowV2.iml" filepath="$PROJECT_DIR$/06_BookMyShowV2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/06_BookMyShowV2.main.iml" filepath="$PROJECT_DIR$/.idea/modules/06_BookMyShowV2.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/06_BookMyShowV2.test.iml" filepath="$PROJECT_DIR$/.idea/modules/06_BookMyShowV2.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07_LoggingSystem.iml" filepath="$PROJECT_DIR$/07_LoggingSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/07_LoggingSystem.main.iml" filepath="$PROJECT_DIR$/.idea/modules/07_LoggingSystem.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/07_LoggingSystem.test.iml" filepath="$PROJECT_DIR$/.idea/modules/07_LoggingSystem.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08_HospitalManagementSystsem.iml" filepath="$PROJECT_DIR$/08_HospitalManagementSystsem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/08_HospitalManagementSystsem.main.iml" filepath="$PROJECT_DIR$/.idea/modules/08_HospitalManagementSystsem.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/08_HospitalManagementSystsem.test.iml" filepath="$PROJECT_DIR$/.idea/modules/08_HospitalManagementSystsem.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/09_VendingMachine/09_VendingMachine.iml" filepath="$PROJECT_DIR$/09_VendingMachine/09_VendingMachine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LLD.iml" filepath="$PROJECT_DIR$/LLD.iml" />
+    </modules>
+  </component>
+</project>

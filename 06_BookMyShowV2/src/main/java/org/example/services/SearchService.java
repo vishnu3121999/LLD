@@ -1,9 +1,11 @@
 package org.example.services;
 
 import org.example.database.State;
+import org.example.models.Seat;
 import org.example.models.Show;
 import org.example.models.Theater;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class SearchService {
@@ -24,6 +26,19 @@ public class SearchService {
                 .filter((show)->show.getMovieId().equals(movie) && state.getTheaters().get(show.getTheaterId()).getCity().equals(city))
                 .map(Show::getTheaterId)
                 .toList();
+    }
+
+
+    // can give wrong results sometimes, if some seats are being locked by another thread
+    // To make it completely correct, we need to lock the showLock during read as well
+    public List<Seat> showAllFreeSeatsForShow(String showId){
+        List<String> seatsList = state.getShows().get(showId).getSeats();
+        ArrayList<Seat> result = new ArrayList<>();
+        for(String seatId:seatsList){
+            Seat seat = state.getSeats().get(seatId);
+            if(seat.isSeatFree())result.add(seat);
+        }
+        return result;
     }
 
 }

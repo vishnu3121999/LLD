@@ -2,6 +2,7 @@ package org.example.services;
 
 import org.example.database.State;
 import org.example.enums.SeatStatus;
+import org.example.locks.LockManager;
 import org.example.models.Screen;
 import org.example.models.Seat;
 import org.example.models.Show;
@@ -31,8 +32,10 @@ public class AdminService {
     String addShow(String screenId, String movie, String theaterId, LocalDateTime startTime, List<String> seats){
         String showId = UUID.randomUUID().toString();
         Show show = new Show(screenId,movie,theaterId,startTime,seats);
+
         state.getShows().put(showId, show);
         state.getScreens().get(screenId).getShowList().add(showId);
+        LockManager.addLockForShow(showId);
 
         return showId;
     }
@@ -48,7 +51,7 @@ public class AdminService {
 
     String addSeat(String showId){
         String seatId = UUID.randomUUID().toString();
-        Seat seat = new Seat(seatId, SeatStatus.FREE);
+        Seat seat = new Seat(seatId, SeatStatus.FREE,600);
         state.getShows().get(showId).getSeats().add(seatId);
         state.getSeats().put(seatId,seat);
 

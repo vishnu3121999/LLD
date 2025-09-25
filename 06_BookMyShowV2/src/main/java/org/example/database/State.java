@@ -5,6 +5,7 @@ import org.example.models.*;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 @Data
 public class State {
@@ -17,13 +18,16 @@ public class State {
     Map<String, Screen> screens;
     Map<String, Seat> seats;
 
+
+    // Note - use concurrent collections for multi-threaded app to prevent concurrentModificationException
+    //                                                                      at runtime
     public State(){
-        movies = new HashMap<>();
-        theaters = new HashMap<>();
-        tickets = new HashMap<>();
-        shows = new HashMap<>();
-        screens = new HashMap<>();
-        seats = new HashMap<>();
+        movies = new ConcurrentHashMap<>();
+        theaters = new ConcurrentHashMap<>();
+        tickets = new ConcurrentHashMap<>();
+        shows = new ConcurrentHashMap<>();
+        screens = new ConcurrentHashMap<>();
+        seats = new ConcurrentHashMap<>();
     }
 
 }

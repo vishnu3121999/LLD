@@ -1,17 +1,17 @@
 package org.example.services;
 
-import org.example.models.Seat;
+import org.example.enums.PaymentType;
+import org.example.models.Ticket;
 
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Map;
 
 public class ServiceFacade {
 
     BookingService bookingService;
     AdminService adminService;
     SearchService searchService;
-
+    PaymentService paymentService;
     public ServiceFacade(AdminService adminService, BookingService bookingService, SearchService searchService) {
         this.adminService = adminService;
         this.bookingService = bookingService;
@@ -42,4 +42,10 @@ public class ServiceFacade {
         return searchService.getTheatersByMovieAndCity(movie,city);
     }
 
+    // UI will show this method to user only during the lockExpiry window -
+    // so no need to do validations on whether locks are exipred or not during payment
+    // Locks just to prevent others from selecting same seats again
+    public Ticket pay(PaymentType paymentType,String ticketId) {
+        return paymentService.pay(paymentType,ticketId);
+    }
 }

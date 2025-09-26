@@ -19,6 +19,7 @@ public class BookingService {
         this.state = state;
     }
 
+    // Pessimistic locking - as conflicts are very frequent
     String bookTicket(String userId, String showId, List<String> seatIds){
 
         LockManager.getLockForShow(showId).lock();

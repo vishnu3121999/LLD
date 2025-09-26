@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class CashPayment implements Payment{
     @Override
-    public boolean pay() {
+    public boolean processPayment() {
 
         System.out.println("Insert Cash");
 

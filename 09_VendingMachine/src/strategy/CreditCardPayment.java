@@ -5,7 +5,7 @@ import java.util.Random;
 public class CreditCardPayment implements Payment{
 
     @Override
-    public boolean pay() {
+    public boolean processPayment() {
 
         System.out.println("Scan QR & Pay");
         Random random = new Random();

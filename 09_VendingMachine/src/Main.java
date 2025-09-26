@@ -24,31 +24,29 @@ public class Main {
 
         Facade facade = new Facade(repo);
 
-        while(true){
-            System.out.println("Select porduct by providing RackId");
-            Scanner sc = new Scanner(System.in);
 
-            String productId = sc.next();
+        // Happy Flow :  select -> pay -> collect
+        // Happy Flow :  select -> cancel
+        // Happy Flow :  cancel
+        // Unsupported Flow :  select -> pay -> cancel   (cancelling not allowed after payment )
 
-            System.out.println("Do Payment, Select:");
-            System.out.println("1. Credit Card");
-            System.out.println("2. Cash");
+        // Unhappy flows are difficult to simulate. Need to create multiple threads for diff req to simulate the exception behaviour
+        // Unhappy flow1 : pay
+        // Unhappy flow1 : select -> pay -> pay
+        // Unhappy flow1 : select -> pay -> select
+        // Unhappy flow1 : select -> select
+            try{
 
-            int paymentChoice = sc.nextInt();
-            boolean success = switch (paymentChoice){
-                case 1 -> facade.pay("credit",productId);
-                case 2 -> facade.pay("cash",productId);
-                default -> throw new IllegalArgumentException("Invalid Option");
-            };
-
-            if(!success){
-                continue;
+            }
+            catch (Exception e){
+                System.out.println("Exception:"+e.getMessage());
             }
 
 
 
 
 
-        }
+
+
     }
 }

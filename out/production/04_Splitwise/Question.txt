@@ -1,0 +1,26 @@
+// 1. The system should allow users to create accounts and manage their profile information.
+// 2. Users should be able to create groups and add other users to the groups.
+// 3. Users should be able to add expenses within a group, specifying the amount, description, and participants.
+// 4. The system should automatically split the expenses among the participants based on their share.
+// 5. Users should be able to view their individual balances with other users and settle up the balances.
+// 6. The system should support different split methods, such as equal split, percentage split, and exact amounts.
+// 7. Users should be able to view their transaction history and group expenses.
+// 8. The system should handle concurrent transactions and ensure data consistency.
+
+
+
+
+
+Actors: users , system
+UseCases:
+    Users - createGroup , createExpense, viewBalance , settleBalance, viewTxnHistory
+    System - splitExpense (triggered from inside createExpense)
+
+
+Entities:
+    SplitWiseSystem (List<Groups> , List<Users> ,List<Expense>, Map<<user1,user2>,amount> ledger)
+    Group ( id, List<User> , List<Expense>,
+    User ( id, name , ...),
+    Expense ( id, List<User> , paidUser , Amount, SplitStrategy )
+
+

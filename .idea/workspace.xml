@@ -5,22 +5,106 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14200a90-60ef-4262-94df-26997255856b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.continue/agents/new-agent.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.continue/mcpServers/new-mcp-server.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09_VendingMachine/src/models/VMState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/06_BookMyShowV2.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/06_BookMyShowV2.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03_ElevatorSystem/src/database/State.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03_ElevatorSystem/src/models/Direction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03_ElevatorSystem/src/models/ElevatorState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03_ElevatorSystem/src/observer/ElevatorObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03_ElevatorSystem/src/observer/HallDisplay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03_ElevatorSystem/src/services/ServiceFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03_ElevatorSystem/src/strategy/ElevatorSelectionStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03_ElevatorSystem/src/strategy/MinWaitTimeElevetorStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09_VendingMachine/src/com/example/vm/factory/PaymentFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09_VendingMachine/src/com/example/vm/model/PaymentType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09_VendingMachine/src/com/example/vm/service/VendingMachineFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09_VendingMachine/src/com/example/vm/state/DispatchingState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09_VendingMachine/src/com/example/vm/state/IdleState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09_VendingMachine/src/com/example/vm/state/MaintenanceState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09_VendingMachine/src/com/example/vm/state/PendingPaymentState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09_VendingMachine/src/com/example/vm/state/VendingMachineState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09_VendingMachine/src/com/example/vm/strategy/CashStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09_VendingMachine/src/com/example/vm/strategy/PaymentStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09_VendingMachine/src/com/example/vm/strategy/UPIStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10_TicTacToe-1/10_TicTacToe-1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10_TicTacToe-1/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10_TicTacToe-1/src/database/GameHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10_TicTacToe-1/src/model/Move.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10_TicTacToe-1/src/model/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10_TicTacToe-1/src/model/board/ClassicBoard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10_TicTacToe-1/src/model/board/TicTacToeBoard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10_TicTacToe-1/src/model/enums/GameState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10_TicTacToe-1/src/model/enums/Symbol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10_TicTacToe-1/src/model/game/ClassicGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10_TicTacToe-1/src/model/game/GameMemento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10_TicTacToe-1/src/model/game/TicTacToeGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10_TicTacToe-1/src/strategy/HumanPlayerStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10_TicTacToe-1/src/strategy/PlayerStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11_InventoryManagementSystem/11_InventoryManagementSystem.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11_InventoryManagementSystem/src/State.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11_InventoryManagementSystem/src/models/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11_InventoryManagementSystem/src/models/WareHouse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11_InventoryManagementSystem/src/services/ServiceFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06_BookMyShowV2/src/main/java/org/example/services/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/06_BookMyShowV2/src/main/java/org/example/services/BookingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09_VendingMachine/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/09_VendingMachine/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09_VendingMachine/src/service/Facade.java" beforeDir="false" afterPath="$PROJECT_DIR$/09_VendingMachine/src/service/Facade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09_VendingMachine/src/strategy/CashPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/09_VendingMachine/src/strategy/CashPayment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09_VendingMachine/src/strategy/CreditCardPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/09_VendingMachine/src/strategy/CreditCardPayment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09_VendingMachine/src/strategy/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/09_VendingMachine/src/strategy/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_ChessGame/.gradle/8.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/02_ChessGame/.gradle/8.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_ChessGame/.gradle/8.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/02_ChessGame/.gradle/8.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_ChessGame/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/02_ChessGame/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_ChessGame/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/02_ChessGame/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_ElevatorSystem/src/Elevator.java" beforeDir="false" afterPath="$PROJECT_DIR$/03_ElevatorSystem/src/models/Elevator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_ElevatorSystem/src/Floor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_ElevatorSystem/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/03_ElevatorSystem/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_ElevatorSystem/src/Request.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05_BookMyShow/.gradle/8.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/05_BookMyShow/.gradle/8.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05_BookMyShow/.gradle/8.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/05_BookMyShow/.gradle/8.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05_BookMyShow/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/05_BookMyShow/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05_BookMyShow/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/05_BookMyShow/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_BookMyShowV2/.gradle/8.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/06_BookMyShowV2/.gradle/8.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_BookMyShowV2/.gradle/8.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/06_BookMyShowV2/.gradle/8.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_BookMyShowV2/.gradle/8.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/06_BookMyShowV2/.gradle/8.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_BookMyShowV2/.gradle/8.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/06_BookMyShowV2/.gradle/8.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_BookMyShowV2/.gradle/8.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/06_BookMyShowV2/.gradle/8.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_BookMyShowV2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/06_BookMyShowV2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_BookMyShowV2/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/06_BookMyShowV2/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_BookMyShowV2/build/classes/java/main/org/example/services/BookingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/06_BookMyShowV2/build/classes/java/main/org/example/services/BookingService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_BookMyShowV2/build/tmp/compileJava/compileTransaction/stash-dir/BookingService.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_BookMyShowV2/build/tmp/compileJava/compileTransaction/stash-dir/LockManager.class.uniqueId2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_BookMyShowV2/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/06_BookMyShowV2/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_BookMyShowV2/src/main/java/org/example/services/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/06_BookMyShowV2/src/main/java/org/example/services/PaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_LoggingSystem/.gradle/8.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/07_LoggingSystem/.gradle/8.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_LoggingSystem/.gradle/8.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/07_LoggingSystem/.gradle/8.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_LoggingSystem/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/07_LoggingSystem/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_LoggingSystem/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/07_LoggingSystem/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_HospitalManagementSystsem/.gradle/8.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/08_HospitalManagementSystsem/.gradle/8.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_HospitalManagementSystsem/.gradle/8.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/08_HospitalManagementSystsem/.gradle/8.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_HospitalManagementSystsem/.gradle/8.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/08_HospitalManagementSystsem/.gradle/8.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_HospitalManagementSystsem/.gradle/8.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/08_HospitalManagementSystsem/.gradle/8.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_HospitalManagementSystsem/.gradle/8.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/08_HospitalManagementSystsem/.gradle/8.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_HospitalManagementSystsem/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/08_HospitalManagementSystsem/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_HospitalManagementSystsem/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/08_HospitalManagementSystsem/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_HospitalManagementSystsem/build/classes/java/main/org/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/08_HospitalManagementSystsem/build/classes/java/main/org/example/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_HospitalManagementSystsem/build/tmp/compileJava/compileTransaction/stash-dir/Main.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/08_HospitalManagementSystsem/build/tmp/compileJava/compileTransaction/stash-dir/Main.class.uniqueId0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_HospitalManagementSystsem/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/08_HospitalManagementSystsem/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_VendingMachine/09_VendingMachine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/09_VendingMachine/09_VendingMachine.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_VendingMachine/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_VendingMachine/src/database/Repo.java" beforeDir="false" afterPath="$PROJECT_DIR$/09_VendingMachine/src/com/example/vm/database/DataStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_VendingMachine/src/factory/PaymentFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_VendingMachine/src/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/09_VendingMachine/src/com/example/vm/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_VendingMachine/src/models/Rack.java" beforeDir="false" afterPath="$PROJECT_DIR$/09_VendingMachine/src/com/example/vm/model/Rack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_VendingMachine/src/models/VMState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_VendingMachine/src/service/Facade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_VendingMachine/src/strategy/CashPayment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_VendingMachine/src/strategy/CreditCardPayment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_VendingMachine/src/strategy/Payment.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/09_VendingMachine/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/09_VendingMachine/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/09_VendingMachine/service/Facade.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/09_VendingMachine/service/Facade.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/09_VendingMachine/strategy/CashPayment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/09_VendingMachine/strategy/CashPayment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/09_VendingMachine/strategy/CreditCardPayment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/09_VendingMachine/strategy/CreditCardPayment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/09_VendingMachine/strategy/Payment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/09_VendingMachine/strategy/Payment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/09_VendingMachine/database/Repo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/09_VendingMachine/factory/PaymentFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/09_VendingMachine/models/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/09_VendingMachine/models/Rack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/09_VendingMachine/models/VMState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/09_VendingMachine/service/Facade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/09_VendingMachine/strategy/CashPayment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/09_VendingMachine/strategy/CreditCardPayment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/09_VendingMachine/strategy/Payment.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,9 +148,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -84,40 +168,57 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main (4).executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Gradle.02_ChessGame [:Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.05_BookMyShow [:Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.06_BookMyShowV2 [:org.example.Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.07_LoggingSystem [:Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.08_HospitalManagementSystsem [:Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/vishn/OneDrive/Desktop/workspace/InterviewPrep/LLD&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/vishn/OneDrive/Desktop/workspace/InterviewPrep/LLD/10_TicTacToe/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main (4).executor": "Run",
+    "Application.TicTacToe-1.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.02_ChessGame [:Main.main()].executor": "Run",
+    "Gradle.05_BookMyShow [:Main.main()].executor": "Run",
+    "Gradle.06_BookMyShowV2 [:org.example.Main.main()].executor": "Run",
+    "Gradle.07_LoggingSystem [:Main.main()].executor": "Run",
+    "Gradle.08_HospitalManagementSystsem [:Main.main()].executor": "Run",
+    "Gradle.Build 02_ChessGame.executor": "Run",
+    "Gradle.Build 05_BookMyShow.executor": "Run",
+    "Gradle.Build 06_BookMyShowV2.executor": "Run",
+    "Gradle.Build 07_LoggingSystem.executor": "Run",
+    "Gradle.Build 08_HospitalManagementSystsem.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/vishn/OneDrive/Desktop/workspace/InterviewPrep/LLD",
+    "onboarding.tips.debug.path": "C:/Users/vishn/OneDrive/Desktop/workspace/InterviewPrep/LLD/10_TicTacToe-1/src/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "to.speed.mode.migration.done": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\vishn\OneDrive\Desktop\workspace\InterviewPrep\LLD" />
+      <recent name="C:\Users\vishn\OneDrive\Desktop\workspace\InterviewPrep\LLD\09_VendingMachine_1\src" />
       <recent name="C:\Users\vishn\OneDrive\Desktop\workspace\InterviewPrep\LLD\06_BookMyShowV2\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\vishn\OneDrive\Desktop\workspace\InterviewPrep\LLD\06_BookMyShowV2" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.vm.strategy" />
+      <recent name="com.example.vm.service" />
+      <recent name="com.example.vm.database" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Main (4)">
+  <component name="RunManager" selected="Application.TicTacToe-1">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="05_BookMyShow.main" />
@@ -157,13 +258,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="09_VendingMachine" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="06_BookMyShowV2.main" />
@@ -173,6 +267,15 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicTacToe-1" type="Application" factoryName="Application" temporary="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="10_TicTacToe-1" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -192,7 +295,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (4)" />
+        <item itemvalue="Application.TicTacToe-1" />
         <item itemvalue="Application.Main (5)" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
@@ -210,5 +313,16 @@
       <updated>1754992512442</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/11_InventoryManagementSystem/src/Main.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

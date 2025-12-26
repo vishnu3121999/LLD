@@ -1,5 +1,7 @@
 package model;
 
+import model.enums.BookingStatus;
+
 public class Booking {
     String id;
     String riderId;

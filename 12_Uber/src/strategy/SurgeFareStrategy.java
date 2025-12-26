@@ -1,7 +1,7 @@
 package strategy;
 
 import model.Location;
-import model.VehicleType;
+import model.enums.VehicleType;
 
 public class SurgeFareStrategy implements FareStrategy{
     private final int demandCount;

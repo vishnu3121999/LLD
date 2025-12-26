@@ -5,27 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14200a90-60ef-4262-94df-26997255856b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Uber/Uber.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Uber/src/database/DataStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Uber/src/model/Booking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Uber/src/model/BookingStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Uber/src/model/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Uber/src/model/Rider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Uber/src/model/Vehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Uber/src/model/VehicleFare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Uber/src/model/VehicleType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Uber/src/service/Facade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Uber/src/strategy/BaseFareStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Uber/src/strategy/FareStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Uber/src/strategy/SurgeFareStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12_Uber/12_Uber.drawio" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10_TicTacToe/src/database/GameHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/10_TicTacToe/src/database/GameHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11_InventoryManagementSystem/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/11_InventoryManagementSystem/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11_InventoryManagementSystem/src/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/11_InventoryManagementSystem/src/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11_InventoryManagementSystem/src/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/11_InventoryManagementSystem/src/models/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11_InventoryManagementSystem/src/models/WareHouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/11_InventoryManagementSystem/src/models/WareHouse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11_InventoryManagementSystem/src/services/ServiceFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/11_InventoryManagementSystem/src/services/ServiceFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10_TicTacToe/TicTacToe.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/10_TicTacToe/TicTacToe.drawio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uber/CONSISTENCY_CHECKLIST.md" beforeDir="false" afterPath="$PROJECT_DIR$/12_Uber/CONSISTENCY_CHECKLIST.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uber/MULTI_ENTITY_UPDATE_GUIDE.md" beforeDir="false" afterPath="$PROJECT_DIR$/12_Uber/MULTI_ENTITY_UPDATE_GUIDE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uber/QUICK_CONSISTENCY_RULES.md" beforeDir="false" afterPath="$PROJECT_DIR$/12_Uber/QUICK_CONSISTENCY_RULES.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uber/UPDATE_CHECKLIST_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/12_Uber/UPDATE_CHECKLIST_TEMPLATE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uber/Uber.iml" beforeDir="false" afterPath="$PROJECT_DIR$/12_Uber/12_Uber.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uber/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/12_Uber/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uber/src/database/DataStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/12_Uber/src/database/DataStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uber/src/model/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/12_Uber/src/model/Booking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uber/src/model/BookingStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/12_Uber/src/model/enums/BookingStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uber/src/model/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/12_Uber/src/model/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uber/src/model/Rider.java" beforeDir="false" afterPath="$PROJECT_DIR$/12_Uber/src/model/Rider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uber/src/model/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/12_Uber/src/model/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uber/src/model/VehicleFare.java" beforeDir="false" afterPath="$PROJECT_DIR$/12_Uber/src/model/VehicleFare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uber/src/model/VehicleType.java" beforeDir="false" afterPath="$PROJECT_DIR$/12_Uber/src/model/enums/VehicleType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uber/src/service/Facade.java" beforeDir="false" afterPath="$PROJECT_DIR$/12_Uber/src/service/Facade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uber/src/strategy/BaseFareStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/12_Uber/src/strategy/BaseFareStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uber/src/strategy/FareStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/12_Uber/src/strategy/FareStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uber/src/strategy/SurgeFareStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/12_Uber/src/strategy/SurgeFareStrategy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +117,7 @@
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/vishn/OneDrive/Desktop/workspace/InterviewPrep/LLD",
+    "last_opened_file_path": "C:/Users/vishn/OneDrive/Desktop/workspace/InterviewPrep/LLD/12_Uber",
     "onboarding.tips.debug.path": "C:/Users/vishn/OneDrive/Desktop/workspace/InterviewPrep/LLD/Uber/src/Main.java",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
@@ -127,6 +128,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\vishn\OneDrive\Desktop\workspace\InterviewPrep\LLD\12_Uber" />
       <recent name="C:\Users\vishn\OneDrive\Desktop\workspace\InterviewPrep\LLD" />
       <recent name="C:\Users\vishn\OneDrive\Desktop\workspace\InterviewPrep\LLD\09_VendingMachine_1\src" />
       <recent name="C:\Users\vishn\OneDrive\Desktop\workspace\InterviewPrep\LLD\06_BookMyShowV2\src" />
@@ -182,7 +184,7 @@
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Uber" />
+      <module name="12_Uber" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

@@ -1,5 +1,7 @@
 import database.DataStore;
 import model.*;
+import model.enums.BookingStatus;
+import model.enums.VehicleType;
 import service.Facade;
 import strategy.BaseFareStrategy;
 import strategy.FareStrategy;
@@ -158,3 +160,5 @@ public class Main {
         return null;
     }
 }
+
+

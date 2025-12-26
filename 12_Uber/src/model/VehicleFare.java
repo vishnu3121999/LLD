@@ -1,5 +1,7 @@
 package model;
 
+import model.enums.VehicleType;
+
 public class VehicleFare {
     VehicleType vehicleType;
     double fare;

@@ -2,8 +2,9 @@ package service;
 
 import database.DataStore;
 import model.*;
+import model.enums.BookingStatus;
+import model.enums.VehicleType;
 import strategy.FareStrategy;
-
 import java.util.*;
 
 public class Facade {
@@ -11,6 +12,7 @@ public class Facade {
     private FareStrategy fareStrategy;
     private DataStore dataStore;
     private Random random = new Random();
+
     public Facade(FareStrategy fareStrategy,DataStore dataStore){
         this.fareStrategy = fareStrategy;
         this.dataStore = dataStore;
@@ -23,7 +25,7 @@ public class Facade {
         return id;
     }
 
-    public String registerVehicle(String name,VehicleType vehicleType, Location currLocation){
+    public String registerVehicle(String name, VehicleType vehicleType, Location currLocation){
         String id = getRandomId();
         Vehicle vehicle = new Vehicle(id,name,vehicleType,currLocation,true);
         dataStore.putVehicle(id,vehicle);
@@ -91,6 +93,7 @@ public class Facade {
         vehicle.setAvailable(true);
     }
 
+    // utils
     private List<Vehicle> findNearByVehicles(Location source, VehicleType vehicleType) {
         ArrayList<Vehicle> list = new ArrayList<>();
         int threshouldDist = 5;
@@ -107,8 +110,9 @@ public class Facade {
         // send notification
     }
 
-    String getRandomId(){
+    private String getRandomId(){
         return UUID.randomUUID().toString();
     }
 
 }
+

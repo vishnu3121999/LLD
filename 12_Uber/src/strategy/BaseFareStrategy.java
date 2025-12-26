@@ -1,11 +1,7 @@
 package strategy;
 
 import model.Location;
-import model.VehicleFare;
-import model.VehicleType;
-
-import java.util.List;
-import java.util.Map;
+import model.enums.VehicleType;
 
 public class BaseFareStrategy implements FareStrategy{
 

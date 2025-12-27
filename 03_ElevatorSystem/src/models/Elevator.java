@@ -1,9 +1,11 @@
 package models;
 
 import observer.ElevatorObserver;
+import strategy.movement.ElevatorMovementStrategy;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -13,23 +15,24 @@ public class Elevator {
     ElevatorState elevatorState;
     Direction direction;
     int currFloor;
-    TreeSet<Integer> stops;
+    TreeMap<Integer,Long> stops;      // <floor,requestedTimestamp>
+    List<ElevatorObserver> observers;
+    ElevatorMovementStrategy elevatorMovementStrategy;
 //    HashSet<Integer> allowedFloors;        --> additional feature
-    List<ElevatorObserver> observers = new ArrayList<>();
 
-
-    public Elevator(String id, int capacity, int currFloor) {
+    public Elevator(String id, int capacity, int currFloor,ElevatorMovementStrategy elevatorMovementStrategy) {
         this.id = id;
         this.capacity = capacity;
         this.currFloor = currFloor;
-        stops = new TreeSet<>();
+        stops = new TreeMap<>();
         elevatorState = ElevatorState.IDLE;
-        direction = Direction.NONE;
-        AtomicInteger i = new AtomicInteger();
+        direction = Direction.IDLE;
+        this.observers  = new ArrayList<>();
+        this.elevatorMovementStrategy = elevatorMovementStrategy;
     }
 
     public void addStop(int floor) {
-        stops.add(floor);
+        stops.putIfAbsent(floor,System.currentTimeMillis());
     }
 
     public void removeStop(int floor) {
@@ -37,11 +40,7 @@ public class Elevator {
     }
 
     public int getNextStop() {
-        if (direction == Direction.UP) {
-            return stops.ceiling(currFloor);
-        } else if (direction == Direction.DOWN) {
-            return stops.floor(currFloor);
-        } else return -1;
+        return elevatorMovementStrategy.nextFloor(this);
     }
 
     // --- Observer Pattern Methods ---
@@ -56,6 +55,39 @@ public class Elevator {
         }
     }
 
+    public void start() throws InterruptedException {
+        while(elevatorState!= ElevatorState.MAINTENANCE){
+            int nextStop = getNextStop();
+            if(nextStop==-1){
+                elevatorState = ElevatorState.IDLE;
+                try {
+                    Thread.sleep(100); // Small sleep to prevent CPU spinning when idle
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                    break;
+                }
+                continue;
+            }
+
+            elevatorState = ElevatorState.MOVING;
+            System.out.println(String.format("         → Elevator %s moving towards floor %d",
+                    id.substring(0, 8) + "...", nextStop));
+            Thread.sleep(1000);
+
+            if(currFloor+1==nextStop || currFloor-1==nextStop){
+                System.out.println(String.format("         → Elevator %s arrived at floor %d",
+                        id.substring(0, 8) + "...", nextStop));
+                removeStop(nextStop);
+                Thread.sleep(1000); // Door open & close
+            }
+            if(nextStop>currFloor){
+                setCurrFloor(currFloor+1);
+            }
+            else setCurrFloor(currFloor-1);
+            notifyObservers();
+        }
+
+    }
 
     // getters & setters
     public String getId() {
@@ -98,12 +130,27 @@ public class Elevator {
         this.currFloor = currFloor;
     }
 
-    public TreeSet<Integer> getStops() {
+    public TreeMap<Integer, Long> getStops() {
         return stops;
     }
 
-    public void setStops(TreeSet<Integer> stops) {
+    public void setStops(TreeMap<Integer, Long> stops) {
         this.stops = stops;
     }
 
+    public List<ElevatorObserver> getObservers() {
+        return observers;
+    }
+
+    public void setObservers(List<ElevatorObserver> observers) {
+        this.observers = observers;
+    }
+
+    public ElevatorMovementStrategy getElevatorMovementStrategy() {
+        return elevatorMovementStrategy;
+    }
+
+    public void setElevatorMovementStrategy(ElevatorMovementStrategy elevatorMovementStrategy) {
+        this.elevatorMovementStrategy = elevatorMovementStrategy;
+    }
 }

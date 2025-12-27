@@ -54,18 +54,61 @@ public class Facade {
     }
 
     public void acceptRide(String vehicleId, String bookingId){
+
         var booking = dataStore.getBooking(bookingId);
-        if(booking.getVehicleId()!=null)return;
-        booking.setBookingStatus(BookingStatus.DRIVER_ASSIGNED);
-        booking.setVehicleId(vehicleId);
+        if(booking == null) {
+            throw new IllegalArgumentException("Booking not found: " + bookingId);
+        }
+
         var vehicle = dataStore.getVehicle(vehicleId);
-        vehicle.setAvailable(false);
+        if(vehicle == null) {
+            throw new IllegalArgumentException("Vehicle not found: " + vehicleId);
+        }
+
+        // ✅ Status validation
+        if(booking.getBookingStatus() != BookingStatus.RIDE_REQUESTED) {
+            throw new IllegalStateException("Booking must be in RIDE_REQUESTED status. Current: "
+                    + booking.getBookingStatus());
+        }
+
+        // Thread-safe: synchronized block ensures atomic check-and-set
+        // Prevents race condition with cancelRide()
+        synchronized(booking) {
+            // Double-check status inside synchronized block
+            if(booking.getBookingStatus() != BookingStatus.RIDE_REQUESTED) {
+                throw new IllegalStateException("Booking status changed. Current: " + booking.getBookingStatus());
+            }
+            
+            // Double-check vehicleId inside synchronized block
+            if (booking.getVehicleId() != null) {
+                throw new IllegalStateException("Booking already has a driver assigned");
+            }
+            
+            booking.setBookingStatus(BookingStatus.DRIVER_ASSIGNED);
+            booking.setVehicleId(vehicleId);
+            vehicle.setAvailable(false);
+        }
     }
 
     public boolean enterOtp(String vehicleId, String bookingId, int otp){
         var booking = dataStore.getBooking(bookingId);
+        if(booking == null) {
+            throw new IllegalArgumentException("Booking not found: " + bookingId);
+        }
+
+        // ✅ Status validation
+        if(booking.getBookingStatus() != BookingStatus.DRIVER_ASSIGNED) {
+            throw new IllegalStateException("Booking must be in DRIVER_ASSIGNED status. Current: "
+                    + booking.getBookingStatus());
+        }
+
+        // ✅ Vehicle matching validation - MISC Validation
+        if(!vehicleId.equals(booking.getVehicleId())) {
+            throw new IllegalArgumentException("Vehicle ID does not match assigned vehicle");
+        }
+
         int attempts = booking.getFailedOTPAttempts();
-        if(attempts==3){
+        if(attempts>3){
             cancelRide(bookingId);
             return false;
         }
@@ -79,6 +122,13 @@ public class Facade {
 
     public void endRide(String bookingId){
         var booking = dataStore.getBooking(bookingId);
+        if(booking == null) {
+            throw new IllegalArgumentException("Booking not found: " + bookingId);
+        }
+        // ✅ Status validation
+        if(booking.getBookingStatus() != BookingStatus.RIDE_STARTED) {
+            throw new IllegalStateException("Ride must be started before ending. Current: " + booking.getBookingStatus());
+        }
         booking.setBookingStatus(BookingStatus.RIDE_COMPLETE);
         String vehicleid = booking.getVehicleId();
         var vehicle = dataStore.getVehicle(vehicleid);
@@ -87,11 +137,26 @@ public class Facade {
 
     public void cancelRide(String bookingId) {
         var booking = dataStore.getBooking(bookingId);
-        booking.setBookingStatus(BookingStatus.RIDE_CANCELLED);
-        String vehicleid = booking.getVehicleId();
-        var vehicle = dataStore.getVehicle(vehicleid);
-        vehicle.setAvailable(true);
+        if(booking == null) {
+            throw new IllegalArgumentException("Booking not found: " + bookingId);
+        }
+        
+        // ✅ Status validation - fail fast
+        if(booking.getBookingStatus() == BookingStatus.RIDE_COMPLETE ||
+                booking.getBookingStatus() == BookingStatus.RIDE_CANCELLED) {
+            throw new IllegalStateException("Cannot cancel a ride that is already " + booking.getBookingStatus());
+        }
+        
+        // ✅ Thread-safe: synchronized block ensures atomic check-and-set
+        // Prevents race condition with acceptRide()
+        synchronized(booking) {
+            booking.setBookingStatus(BookingStatus.RIDE_CANCELLED);
+            String vehicleid = booking.getVehicleId();
+            var vehicle = dataStore.getVehicle(vehicleid);
+            vehicle.setAvailable(true);
+        }
     }
+
 
     // utils
     private List<Vehicle> findNearByVehicles(Location source, VehicleType vehicleType) {

@@ -1,5 +1,5 @@
 package models;
 
 public enum ElevatorState {
-    RUNNING,IDLE,MAINTENANCE;
+    IDLE,MOVING,MAINTENANCE;
 }

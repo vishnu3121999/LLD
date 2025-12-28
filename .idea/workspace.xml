@@ -5,41 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14200a90-60ef-4262-94df-26997255856b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/03_ElevatorSystem/src/database/DataStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03_ElevatorSystem/src/strategy/movement/ElevatorMovementStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03_ElevatorSystem/src/strategy/movement/SameDirectionStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/03_ElevatorSystem/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/03_ElevatorSystem/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03_ElevatorSystem/src/database/State.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/03_ElevatorSystem/src/models/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/03_ElevatorSystem/src/models/Direction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/03_ElevatorSystem/src/models/Elevator.java" beforeDir="false" afterPath="$PROJECT_DIR$/03_ElevatorSystem/src/models/Elevator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03_ElevatorSystem/src/models/ElevatorState.java" beforeDir="false" afterPath="$PROJECT_DIR$/03_ElevatorSystem/src/models/ElevatorState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/03_ElevatorSystem/src/observer/HallDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/03_ElevatorSystem/src/observer/HallDisplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/03_ElevatorSystem/src/services/ServiceFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/03_ElevatorSystem/src/services/ServiceFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03_ElevatorSystem/src/strategy/ElevatorSelectionStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/03_ElevatorSystem/src/strategy/selection/ElevatorSelectionStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03_ElevatorSystem/src/strategy/MinWaitTimeElevetorStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/03_ElevatorSystem/src/strategy/selection/MinSeekTimeStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/12_Uber/12_Uber.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/12_Uber/12_Uber.drawio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/12_Uber/CONSISTENCY_CHECKLIST.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/12_Uber/MULTI_ENTITY_UPDATE_GUIDE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/12_Uber/QUICK_CONSISTENCY_RULES.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/12_Uber/UPDATE_CHECKLIST_TEMPLATE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/12_Uber/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/12_Uber/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/12_Uber/src/service/Facade.java" beforeDir="false" afterPath="$PROJECT_DIR$/12_Uber/src/service/Facade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LLD/.obsidian/app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LLD/.obsidian/appearance.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LLD/.obsidian/core-plugins.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LLD/.obsidian/graph.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LLD/.obsidian/workspace.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LLD/Vending Machine.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/03_ElevatorSystem/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/03_ElevatorSystem/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/03_ElevatorSystem/database/State.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/03_ElevatorSystem/models/Elevator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/03_ElevatorSystem/models/Elevator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/03_ElevatorSystem/models/ElevatorState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/03_ElevatorSystem/models/ElevatorState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/03_ElevatorSystem/observer/HallDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/03_ElevatorSystem/observer/HallDisplay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/03_ElevatorSystem/services/Move.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/03_ElevatorSystem/services/ServiceFacade.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/03_ElevatorSystem/services/ServiceFacade.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/03_ElevatorSystem/strategy/ElevatorSelectionStrategy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/03_ElevatorSystem/strategy/MinWaitTimeElevetorStrategy.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

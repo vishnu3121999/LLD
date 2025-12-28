@@ -20,6 +20,48 @@ public class Elevator {
     ElevatorMovementStrategy elevatorMovementStrategy;
 //    HashSet<Integer> allowedFloors;        --> additional feature
 
+    // --- Observer Pattern Methods ---
+    public void addObserver(ElevatorObserver observer) {
+        observers.add(observer);
+        observer.update(this); // Send initial state
+    }
+
+    public void notifyObservers() {
+        for (ElevatorObserver observer : observers) {
+            observer.update(this);
+        }
+    }
+
+    public void start() throws InterruptedException {
+        // in 1 iteration lift moves 1 floor UP/DOWN
+        while(elevatorState!= ElevatorState.MAINTENANCE){
+            int nextStop = getNextStop();
+            if(nextStop==-1){
+                elevatorState = ElevatorState.IDLE;
+                Thread.sleep(100);
+                continue;
+            }
+
+            elevatorState = ElevatorState.MOVING;
+            System.out.println(String.format("         → Elevator %s moving towards floor %d",
+                    id.substring(0, 8) + "...", nextStop));
+            Thread.sleep(1000);
+
+            if(currFloor+1==nextStop || currFloor-1==nextStop){
+                System.out.println(String.format("         → Elevator %s arrived at floor %d",
+                        id.substring(0, 8) + "...", nextStop));
+                removeStop(nextStop);
+                Thread.sleep(1000); // Door open & close
+            }
+            if(nextStop>currFloor){
+                setCurrFloor(currFloor+1);
+            }
+            else setCurrFloor(currFloor-1);
+            notifyObservers();
+        }
+    }
+
+
     public Elevator(String id, int capacity, int currFloor,ElevatorMovementStrategy elevatorMovementStrategy) {
         this.id = id;
         this.capacity = capacity;
@@ -41,52 +83,6 @@ public class Elevator {
 
     public int getNextStop() {
         return elevatorMovementStrategy.nextFloor(this);
-    }
-
-    // --- Observer Pattern Methods ---
-    public void addObserver(ElevatorObserver observer) {
-        observers.add(observer);
-        observer.update(this); // Send initial state
-    }
-
-    public void notifyObservers() {
-        for (ElevatorObserver observer : observers) {
-            observer.update(this);
-        }
-    }
-
-    public void start() throws InterruptedException {
-        while(elevatorState!= ElevatorState.MAINTENANCE){
-            int nextStop = getNextStop();
-            if(nextStop==-1){
-                elevatorState = ElevatorState.IDLE;
-                try {
-                    Thread.sleep(100); // Small sleep to prevent CPU spinning when idle
-                } catch (InterruptedException e) {
-                    Thread.currentThread().interrupt();
-                    break;
-                }
-                continue;
-            }
-
-            elevatorState = ElevatorState.MOVING;
-            System.out.println(String.format("         → Elevator %s moving towards floor %d",
-                    id.substring(0, 8) + "...", nextStop));
-            Thread.sleep(1000);
-
-            if(currFloor+1==nextStop || currFloor-1==nextStop){
-                System.out.println(String.format("         → Elevator %s arrived at floor %d",
-                        id.substring(0, 8) + "...", nextStop));
-                removeStop(nextStop);
-                Thread.sleep(1000); // Door open & close
-            }
-            if(nextStop>currFloor){
-                setCurrFloor(currFloor+1);
-            }
-            else setCurrFloor(currFloor-1);
-            notifyObservers();
-        }
-
     }
 
     // getters & setters

@@ -38,3 +38,5 @@ public class SameDirectionStrategy implements ElevatorMovementStrategy {
         }
     }
 }
+
+
